@@ -13,6 +13,14 @@
 		A93DBF641F0F950800EA8F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93DBF631F0F950800EA8F36 /* Assets.xcassets */; };
 		A93DBF671F0F950800EA8F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93DBF651F0F950800EA8F36 /* LaunchScreen.storyboard */; };
 		A93DBF721F0F950900EA8F36 /* SimonSaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF711F0F950900EA8F36 /* SimonSaysTests.swift */; };
+		A93DBF7F1F0F956100EA8F36 /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF7E1F0F956100EA8F36 /* ColorType.swift */; };
+		A93DBF801F0F956100EA8F36 /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF7E1F0F956100EA8F36 /* ColorType.swift */; };
+		A93DBF821F0F95C100EA8F36 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF811F0F95C100EA8F36 /* GameState.swift */; };
+		A93DBF831F0F95C100EA8F36 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF811F0F95C100EA8F36 /* GameState.swift */; };
+		A93DBF851F0F96E900EA8F36 /* GameStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF841F0F96E900EA8F36 /* GameStateManager.swift */; };
+		A93DBF861F0F96E900EA8F36 /* GameStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF841F0F96E900EA8F36 /* GameStateManager.swift */; };
+		A93DBF881F0F98EA00EA8F36 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF871F0F98EA00EA8F36 /* GameStatus.swift */; };
+		A93DBF891F0F98EA00EA8F36 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF871F0F98EA00EA8F36 /* GameStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,10 @@
 		A93DBF6D1F0F950900EA8F36 /* SimonSaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonSaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93DBF711F0F950900EA8F36 /* SimonSaysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysTests.swift; sourceTree = "<group>"; };
 		A93DBF731F0F950900EA8F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A93DBF7E1F0F956100EA8F36 /* ColorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		A93DBF811F0F95C100EA8F36 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		A93DBF841F0F96E900EA8F36 /* GameStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStateManager.swift; sourceTree = "<group>"; };
+		A93DBF871F0F98EA00EA8F36 /* GameStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,10 @@
 				A93DBF631F0F950800EA8F36 /* Assets.xcassets */,
 				A93DBF651F0F950800EA8F36 /* LaunchScreen.storyboard */,
 				A93DBF681F0F950800EA8F36 /* Info.plist */,
+				A93DBF7E1F0F956100EA8F36 /* ColorType.swift */,
+				A93DBF811F0F95C100EA8F36 /* GameState.swift */,
+				A93DBF841F0F96E900EA8F36 /* GameStateManager.swift */,
+				A93DBF871F0F98EA00EA8F36 /* GameStatus.swift */,
 			);
 			path = SimonSays;
 			sourceTree = "<group>";
@@ -199,7 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93DBF851F0F96E900EA8F36 /* GameStateManager.swift in Sources */,
+				A93DBF881F0F98EA00EA8F36 /* GameStatus.swift in Sources */,
 				A93DBF5F1F0F950800EA8F36 /* ViewController.swift in Sources */,
+				A93DBF821F0F95C100EA8F36 /* GameState.swift in Sources */,
+				A93DBF7F1F0F956100EA8F36 /* ColorType.swift in Sources */,
 				A93DBF5D1F0F950800EA8F36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93DBF831F0F95C100EA8F36 /* GameState.swift in Sources */,
 				A93DBF721F0F950900EA8F36 /* SimonSaysTests.swift in Sources */,
+				A93DBF891F0F98EA00EA8F36 /* GameStatus.swift in Sources */,
+				A93DBF801F0F956100EA8F36 /* ColorType.swift in Sources */,
+				A93DBF861F0F96E900EA8F36 /* GameStateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +432,6 @@
 				A93DBF781F0F950900EA8F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		A93DBF791F0F950900EA8F36 /* Build configuration list for PBXNativeTarget "SimonSaysTests" */ = {
 			isa = XCConfigurationList;
@@ -417,7 +440,6 @@
 				A93DBF7B1F0F950900EA8F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
