@@ -14,6 +14,8 @@ class GameStateManager {
     // If wrong, level ends 
     // If right, and more plays are left, keep waiting for player input 
     // If right, and no more plays left, level has succeeded
+    
+    
     func checkPlayerInput(playerInput:ColorType) {
     }
     

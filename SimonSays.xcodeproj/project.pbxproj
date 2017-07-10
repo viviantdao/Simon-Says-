@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A93DBF5D1F0F950800EA8F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF5C1F0F950800EA8F36 /* AppDelegate.swift */; };
-		A93DBF5F1F0F950800EA8F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF5E1F0F950800EA8F36 /* ViewController.swift */; };
+		A93DBF5F1F0F950800EA8F36 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF5E1F0F950800EA8F36 /* GameScreenViewController.swift */; };
 		A93DBF621F0F950800EA8F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93DBF601F0F950800EA8F36 /* Main.storyboard */; };
 		A93DBF641F0F950800EA8F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93DBF631F0F950800EA8F36 /* Assets.xcassets */; };
 		A93DBF671F0F950800EA8F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93DBF651F0F950800EA8F36 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		A93DBF591F0F950800EA8F36 /* SimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93DBF5C1F0F950800EA8F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A93DBF5E1F0F950800EA8F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A93DBF5E1F0F950800EA8F36 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
 		A93DBF611F0F950800EA8F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A93DBF631F0F950800EA8F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A93DBF661F0F950800EA8F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +68,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F5775351F13EBD0006DD64B /* MOdel */ = {
+			isa = PBXGroup;
+			children = (
+				A93DBF7E1F0F956100EA8F36 /* ColorType.swift */,
+				A93DBF841F0F96E900EA8F36 /* GameStateManager.swift */,
+				A93DBF871F0F98EA00EA8F36 /* GameStatus.swift */,
+				A93DBF811F0F95C100EA8F36 /* GameState.swift */,
+			);
+			name = MOdel;
+			sourceTree = "<group>";
+		};
+		5F5775361F13EBE1006DD64B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F5775371F13EBE8006DD64B /* View Controllers */,
+				5F5775351F13EBD0006DD64B /* MOdel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5F5775371F13EBE8006DD64B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A93DBF5E1F0F950800EA8F36 /* GameScreenViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5F5775381F13EC22006DD64B /* App Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A93DBF651F0F950800EA8F36 /* LaunchScreen.storyboard */,
+			);
+			name = "App Resources";
+			sourceTree = "<group>";
+		};
 		A93DBF501F0F950800EA8F36 = {
 			isa = PBXGroup;
 			children = (
@@ -90,15 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				A93DBF5C1F0F950800EA8F36 /* AppDelegate.swift */,
-				A93DBF5E1F0F950800EA8F36 /* ViewController.swift */,
-				A93DBF601F0F950800EA8F36 /* Main.storyboard */,
+				5F5775361F13EBE1006DD64B /* Model */,
 				A93DBF631F0F950800EA8F36 /* Assets.xcassets */,
-				A93DBF651F0F950800EA8F36 /* LaunchScreen.storyboard */,
+				A93DBF601F0F950800EA8F36 /* Main.storyboard */,
 				A93DBF681F0F950800EA8F36 /* Info.plist */,
-				A93DBF7E1F0F956100EA8F36 /* ColorType.swift */,
-				A93DBF811F0F95C100EA8F36 /* GameState.swift */,
-				A93DBF841F0F96E900EA8F36 /* GameStateManager.swift */,
-				A93DBF871F0F98EA00EA8F36 /* GameStatus.swift */,
+				5F5775381F13EC22006DD64B /* App Resources */,
 			);
 			path = SimonSays;
 			sourceTree = "<group>";
@@ -217,7 +249,7 @@
 			files = (
 				A93DBF851F0F96E900EA8F36 /* GameStateManager.swift in Sources */,
 				A93DBF881F0F98EA00EA8F36 /* GameStatus.swift in Sources */,
-				A93DBF5F1F0F950800EA8F36 /* ViewController.swift in Sources */,
+				A93DBF5F1F0F950800EA8F36 /* GameScreenViewController.swift in Sources */,
 				A93DBF821F0F95C100EA8F36 /* GameState.swift in Sources */,
 				A93DBF7F1F0F956100EA8F36 /* ColorType.swift in Sources */,
 				A93DBF5D1F0F950800EA8F36 /* AppDelegate.swift in Sources */,
@@ -432,6 +464,7 @@
 				A93DBF781F0F950900EA8F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A93DBF791F0F950900EA8F36 /* Build configuration list for PBXNativeTarget "SimonSaysTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +473,7 @@
 				A93DBF7B1F0F950900EA8F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
