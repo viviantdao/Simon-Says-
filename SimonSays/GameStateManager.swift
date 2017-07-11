@@ -9,6 +9,8 @@
 import Foundation
 class GameStateManager {
     var gameState: GameState = GameState()
+     var index: Int = 0
+    
 
     // Checks the player's input 
     // If wrong, level ends 
@@ -17,16 +19,18 @@ class GameStateManager {
     
     
     func checkPlayerInput(playerInput: ColorType) {
-        for check in gameState.sequence {
-            if playerInput == check {
+        if playerInput == gameState.sequence[index] {
+            index += 1
+            gameState.status = .awaitingPlayerInput
+            if index == gameState.sequence.count {
                 gameState.status = .levelPassed
-            }
-            else {
-                gameState.status = .levelFailed
-                return
+                gameState.score += 1
             }
         }
-    }
+        else {
+            gameState.status = .levelFailed
+        }
+        }
     
     
     // Game can only move to next level if: 
@@ -34,9 +38,11 @@ class GameStateManager {
     // - current level has succeeded
     // GameState is updated when level increments
     func startNextLevel() {
-        gameState.currentLevel += 1
+        if gameState.status == .levelPassed || gameState.status == .notStarted {
+            gameState.currentLevel += 1
+        gameState.status = .awaitingPlayerInput
         let newColor: ColorType = ColorType(rawValue: Int(arc4random_uniform(4)))!
-        gameState.sequence.append(newColor)
+            gameState.sequence.append(newColor) }
     }
 
     // A new game can be started at any time
