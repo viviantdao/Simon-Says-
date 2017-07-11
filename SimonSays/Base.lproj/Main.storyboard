@@ -51,15 +51,15 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-MB-8PO">
                                 <rect key="frame" x="51.5" y="224.5" width="131" height="131.5"/>
-                                <color key="backgroundColor" red="1" green="0.72941176470588232" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.019607843140000001" green="0.65098039220000004" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afh-ef-cHX">
                                 <rect key="frame" x="192.5" y="224.5" width="131" height="131.5"/>
-                                <color key="backgroundColor" red="0.50588235294117645" green="0.73725490196078436" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="0.72941176470000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udl-q6-n4N">
                                 <rect key="frame" x="192.5" y="83" width="131" height="131.5"/>
-                                <color key="backgroundColor" red="0.019607843137254902" green="0.65098039215686276" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.50588235290000005" green="0.73725490199999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,23 +107,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="game over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjJ-4v-EBC">
-                                <rect key="frame" x="147" y="51" width="80.5" height="20.5"/>
+                                <rect key="frame" x="147" y="51" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N0-jR-keb">
-                                <rect key="frame" x="-0.5" y="446" width="375" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N0-jR-keb">
+                                <rect key="frame" x="0.0" y="446" width="375" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afp-Vd-DJA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afp-Vd-DJA">
                                 <rect key="frame" x="115" y="232" width="141" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="2Pg-ea-WD1"/>
+                                    <constraint firstAttribute="height" constant="75" id="Nk0-wc-xqB"/>
+                                </constraints>
                                 <state key="normal" title="submit score "/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ku-8D-0fy">
-                                <rect key="frame" x="26" y="99.5" width="323" height="30"/>
+                                <rect key="frame" x="26" y="100" width="323" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -134,9 +138,11 @@
                             <constraint firstItem="6Ku-8D-0fy" firstAttribute="leading" secondItem="Q2q-4b-nJ1" secondAttribute="leadingMargin" constant="10" id="0PX-2I-l0p"/>
                             <constraint firstItem="6Ku-8D-0fy" firstAttribute="top" secondItem="HjJ-4v-EBC" secondAttribute="bottom" constant="28" id="3Xc-qW-reW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6Ku-8D-0fy" secondAttribute="trailing" constant="10" id="6yp-u2-KM2"/>
+                            <constraint firstItem="Afp-Vd-DJA" firstAttribute="top" secondItem="Q2q-4b-nJ1" secondAttribute="top" constant="232" id="PVw-6T-yC0"/>
                             <constraint firstItem="8N0-jR-keb" firstAttribute="top" secondItem="Afp-Vd-DJA" secondAttribute="bottom" constant="139" id="dgW-5j-EO2"/>
                             <constraint firstItem="8N0-jR-keb" firstAttribute="width" secondItem="Q2q-4b-nJ1" secondAttribute="width" id="ePe-9x-klE"/>
                             <constraint firstItem="HjJ-4v-EBC" firstAttribute="top" secondItem="xsG-o6-twU" secondAttribute="bottom" constant="31" id="fOL-b7-W1M"/>
+                            <constraint firstItem="Afp-Vd-DJA" firstAttribute="leading" secondItem="Q2q-4b-nJ1" secondAttribute="leadingMargin" constant="99" id="mAy-36-acl"/>
                             <constraint firstItem="8N0-jR-keb" firstAttribute="centerX" secondItem="Q2q-4b-nJ1" secondAttribute="centerX" id="oqH-kR-M6y"/>
                             <constraint firstItem="HjJ-4v-EBC" firstAttribute="centerX" secondItem="Q2q-4b-nJ1" secondAttribute="centerX" id="pRb-bO-bxX"/>
                         </constraints>
