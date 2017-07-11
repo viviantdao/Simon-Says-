@@ -30,8 +30,7 @@ class GameStateManager {
         else {
             gameState.status = .levelFailed
         }
-        }
-    
+    }
     
     // Game can only move to next level if: 
     // - game hasn't begun 

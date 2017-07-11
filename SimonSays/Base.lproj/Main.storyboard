@@ -31,6 +31,9 @@
                                     <constraint firstAttribute="width" constant="85" id="Quy-Ob-UF1"/>
                                 </constraints>
                                 <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgA-dC-F5I"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp9-Q2-8k0">
                                 <rect key="frame" x="153.5" y="415" width="68" height="32"/>
@@ -42,7 +45,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-wg-W8T">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-wg-W8T" customClass="GameScreenViewControl">
                                 <rect key="frame" x="51.5" y="83" width="131" height="131.5"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.32549019607843138" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -52,14 +55,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-MB-8PO">
                                 <rect key="frame" x="51.5" y="224.5" width="131" height="131.5"/>
                                 <color key="backgroundColor" red="0.019607843140000001" green="0.65098039220000004" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6bA-na-Zr5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afh-ef-cHX">
                                 <rect key="frame" x="192.5" y="224.5" width="131" height="131.5"/>
                                 <color key="backgroundColor" red="1" green="0.72941176470000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKB-so-rBL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udl-q6-n4N">
                                 <rect key="frame" x="192.5" y="83" width="131" height="131.5"/>
                                 <color key="backgroundColor" red="0.50588235290000005" green="0.73725490199999999" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEM-2x-KFg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,7 +99,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="tGi-lO-p9w"/>
                     <connections>
-                        <segue destination="a1z-va-geZ" kind="show" id="t9M-Hn-dC3"/>
+                        <outlet property="BlueButton" destination="Z7k-MB-8PO" id="CwO-EQ-3R8"/>
+                        <outlet property="GreenButton" destination="Udl-q6-n4N" id="1h4-H3-FVX"/>
+                        <outlet property="RedButton" destination="h9c-wg-W8T" id="dpV-XH-uA3"/>
+                        <outlet property="StartGame" destination="UAP-vb-0qa" id="HaI-Bc-3mg"/>
+                        <outlet property="YellowButton" destination="afh-ef-cHX" id="k5D-0E-0RD"/>
+                        <segue destination="a1z-va-geZ" kind="show" identifier="GameOver" id="CgI-0r-SIW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
