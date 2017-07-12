@@ -173,6 +173,15 @@ class SimonSaysTests: XCTestCase {
         XCTAssertEqual(state.status, .levelFailed)
     }
     
+//    func testCheckPlayerInputFailedAfterAttemptInLevelTwo() {
+//        let gm = GameStateManager()
+//        
+//        //Level 1
+//        gm.startNewGame()
+//        var state = gm.gameState()
+//        gm.checkPlayerInput(playerInput: <#T##ColorType#>)
+//    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         // test performance 
