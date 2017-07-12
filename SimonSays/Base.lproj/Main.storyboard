@@ -102,6 +102,7 @@
                         <outlet property="BlueButton" destination="Z7k-MB-8PO" id="CwO-EQ-3R8"/>
                         <outlet property="GreenButton" destination="Udl-q6-n4N" id="1h4-H3-FVX"/>
                         <outlet property="RedButton" destination="h9c-wg-W8T" id="dpV-XH-uA3"/>
+                        <outlet property="ScoreLabel" destination="rp9-Q2-8k0" id="8eX-Bg-7yT"/>
                         <outlet property="StartGame" destination="UAP-vb-0qa" id="HaI-Bc-3mg"/>
                         <outlet property="YellowButton" destination="afh-ef-cHX" id="k5D-0E-0RD"/>
                         <segue destination="a1z-va-geZ" kind="show" identifier="GameOver" id="CgI-0r-SIW"/>
@@ -111,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="100" y="-149.77511244377811"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Over View Controller-->
         <scene sceneID="bVG-Vr-baj">
             <objects>
-                <viewController id="a1z-va-geZ" sceneMemberID="viewController">
+                <viewController id="a1z-va-geZ" customClass="GameOverViewController" customModule="SimonSays" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xsG-o6-twU"/>
                         <viewControllerLayoutGuide type="bottom" id="sKy-bQ-mVP"/>
@@ -165,6 +166,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bWZ-zT-ZzR"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="Afp-Vd-DJA" id="OFe-1b-NCv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpI-1e-ala" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
