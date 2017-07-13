@@ -45,12 +45,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-wg-W8T" customClass="GameScreenViewControl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-wg-W8T">
                                 <rect key="frame" x="51.5" y="83" width="131" height="131.5"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.32549019607843138" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="h9c-wg-W8T" secondAttribute="height" multiplier="1:1" id="UEj-4A-9mK"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSI-u8-Kgr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-MB-8PO">
                                 <rect key="frame" x="51.5" y="224.5" width="131" height="131.5"/>
@@ -143,6 +146,9 @@
                                     <constraint firstAttribute="height" constant="75" id="Nk0-wc-xqB"/>
                                 </constraints>
                                 <state key="normal" title="submit score "/>
+                                <connections>
+                                    <action selector="SubmitScore:" destination="a1z-va-geZ" eventType="touchUpInside" id="v1A-9R-3hz"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ku-8D-0fy">
                                 <rect key="frame" x="26" y="100" width="323" height="30"/>
@@ -167,7 +173,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="bWZ-zT-ZzR"/>
                     <connections>
-                        <outlet property="scoreLabel" destination="Afp-Vd-DJA" id="OFe-1b-NCv"/>
+                        <outlet property="scoreLabel" destination="8N0-jR-keb" id="1f2-J6-BA2"/>
+                        <segue destination="b7u-Tm-SUi" kind="show" identifier="highScoreSegue" id="CnJ-kK-kVu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpI-1e-ala" userLabel="First Responder" sceneMemberID="firstResponder"/>

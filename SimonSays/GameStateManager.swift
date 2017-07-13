@@ -41,7 +41,9 @@ class GameStateManager {
             gameState.currentLevel += 1
         gameState.status = .awaitingPlayerInput
         let newColor: ColorType = ColorType(rawValue: Int(arc4random_uniform(4)))!
-            gameState.sequence.append(newColor) }
+            gameState.sequence.append(newColor)
+        index = 0
+        }
     }
 
     // A new game can be started at any time
