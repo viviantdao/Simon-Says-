@@ -53,4 +53,10 @@ class GameStateManager {
         startNextLevel()
         
     }
+    func prepareGame() {
+        self.gameState = GameState()
+        
+    }
 }
+
+//table view controller = manages data 

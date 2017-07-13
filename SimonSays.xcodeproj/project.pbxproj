@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5F57753A1F16A2CE006DD64B /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5775391F16A2CE006DD64B /* GameOverViewController.swift */; };
 		5F57753C1F16A7C4006DD64B /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F57753B1F16A7C4006DD64B /* HighScoreViewController.swift */; };
+		5F5775401F17F42F006DD64B /* ManagingHighScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F57753F1F17F42F006DD64B /* ManagingHighScores.swift */; };
+		5F5775421F17F516006DD64B /* StructOfHighScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5775411F17F516006DD64B /* StructOfHighScores.swift */; };
 		A93DBF5D1F0F950800EA8F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF5C1F0F950800EA8F36 /* AppDelegate.swift */; };
 		A93DBF5F1F0F950800EA8F36 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93DBF5E1F0F950800EA8F36 /* GameScreenViewController.swift */; };
 		A93DBF621F0F950800EA8F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93DBF601F0F950800EA8F36 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		5F5775391F16A2CE006DD64B /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		5F57753B1F16A7C4006DD64B /* HighScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
+		5F57753F1F17F42F006DD64B /* ManagingHighScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagingHighScores.swift; sourceTree = "<group>"; };
+		5F5775411F17F516006DD64B /* StructOfHighScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StructOfHighScores.swift; path = ../StructOfHighScores.swift; sourceTree = "<group>"; };
 		A93DBF591F0F950800EA8F36 /* SimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93DBF5C1F0F950800EA8F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A93DBF5E1F0F950800EA8F36 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				5F5775361F13EBE1006DD64B /* Model */,
 				A93DBF631F0F950800EA8F36 /* Assets.xcassets */,
 				A93DBF601F0F950800EA8F36 /* Main.storyboard */,
+				5F5775411F17F516006DD64B /* StructOfHighScores.swift */,
+				5F57753F1F17F42F006DD64B /* ManagingHighScores.swift */,
 				A93DBF681F0F950800EA8F36 /* Info.plist */,
 				5F5775381F13EC22006DD64B /* App Resources */,
 			);
@@ -253,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F5775421F17F516006DD64B /* StructOfHighScores.swift in Sources */,
 				A93DBF851F0F96E900EA8F36 /* GameStateManager.swift in Sources */,
+				5F5775401F17F42F006DD64B /* ManagingHighScores.swift in Sources */,
 				A93DBF881F0F98EA00EA8F36 /* GameStatus.swift in Sources */,
 				A93DBF5F1F0F950800EA8F36 /* GameScreenViewController.swift in Sources */,
 				5F57753C1F16A7C4006DD64B /* HighScoreViewController.swift in Sources */,
