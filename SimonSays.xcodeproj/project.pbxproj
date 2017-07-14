@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48ECB496235FDB7461AEBC24 /* Pods_SimonSaysTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4582BBB4F597343F55A726D9 /* Pods_SimonSaysTests.framework */; };
+		557D0C71AFEA3C5801376E02 /* Pods_SimonSays.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE696B73231D0EC5F22EEC62 /* Pods_SimonSays.framework */; };
 		5F57753A1F16A2CE006DD64B /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5775391F16A2CE006DD64B /* GameOverViewController.swift */; };
 		5F57753C1F16A7C4006DD64B /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F57753B1F16A7C4006DD64B /* HighScoreViewController.swift */; };
 		5F5775401F17F42F006DD64B /* ManagingHighScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F57753F1F17F42F006DD64B /* ManagingHighScores.swift */; };
@@ -38,10 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4582BBB4F597343F55A726D9 /* Pods_SimonSaysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimonSaysTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DACA6A8629F200F2F486EFB /* Pods-SimonSays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimonSays.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimonSays/Pods-SimonSays.release.xcconfig"; sourceTree = "<group>"; };
 		5F5775391F16A2CE006DD64B /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		5F57753B1F16A7C4006DD64B /* HighScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
 		5F57753F1F17F42F006DD64B /* ManagingHighScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagingHighScores.swift; sourceTree = "<group>"; };
 		5F5775411F17F516006DD64B /* StructOfHighScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StructOfHighScores.swift; path = ../StructOfHighScores.swift; sourceTree = "<group>"; };
+		77FED2B11B3353EE4E81DECD /* Pods-SimonSaysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimonSaysTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimonSaysTests/Pods-SimonSaysTests.release.xcconfig"; sourceTree = "<group>"; };
 		A93DBF591F0F950800EA8F36 /* SimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93DBF5C1F0F950800EA8F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A93DBF5E1F0F950800EA8F36 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +61,9 @@
 		A93DBF811F0F95C100EA8F36 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		A93DBF841F0F96E900EA8F36 /* GameStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStateManager.swift; sourceTree = "<group>"; };
 		A93DBF871F0F98EA00EA8F36 /* GameStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
+		ACC67FAAEC299487DD4E1ACD /* Pods-SimonSays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimonSays.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimonSays/Pods-SimonSays.debug.xcconfig"; sourceTree = "<group>"; };
+		CE696B73231D0EC5F22EEC62 /* Pods_SimonSays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimonSays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA87312718BD08B8AF92711B /* Pods-SimonSaysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimonSaysTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimonSaysTests/Pods-SimonSaysTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557D0C71AFEA3C5801376E02 /* Pods_SimonSays.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +79,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48ECB496235FDB7461AEBC24 /* Pods_SimonSaysTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FFBAB22F7F12ACBDB1B625C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACC67FAAEC299487DD4E1ACD /* Pods-SimonSays.debug.xcconfig */,
+				5DACA6A8629F200F2F486EFB /* Pods-SimonSays.release.xcconfig */,
+				FA87312718BD08B8AF92711B /* Pods-SimonSaysTests.debug.xcconfig */,
+				77FED2B11B3353EE4E81DECD /* Pods-SimonSaysTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5F5775351F13EBD0006DD64B /* MOdel */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +141,8 @@
 				A93DBF5B1F0F950800EA8F36 /* SimonSays */,
 				A93DBF701F0F950900EA8F36 /* SimonSaysTests */,
 				A93DBF5A1F0F950800EA8F36 /* Products */,
+				4FFBAB22F7F12ACBDB1B625C /* Pods */,
+				DC66C7690145BA723B628A76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +179,15 @@
 			path = SimonSaysTests;
 			sourceTree = "<group>";
 		};
+		DC66C7690145BA723B628A76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE696B73231D0EC5F22EEC62 /* Pods_SimonSays.framework */,
+				4582BBB4F597343F55A726D9 /* Pods_SimonSaysTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A93DBF761F0F950900EA8F36 /* Build configuration list for PBXNativeTarget "SimonSays" */;
 			buildPhases = (
+				BCB2F36F5F6DBA35CD694D0E /* [CP] Check Pods Manifest.lock */,
 				A93DBF551F0F950800EA8F36 /* Sources */,
 				A93DBF561F0F950800EA8F36 /* Frameworks */,
 				A93DBF571F0F950800EA8F36 /* Resources */,
+				3735EC2F7E230D7E306846E8 /* [CP] Embed Pods Frameworks */,
+				3F21754B848C231252437260 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A93DBF791F0F950900EA8F36 /* Build configuration list for PBXNativeTarget "SimonSaysTests" */;
 			buildPhases = (
+				3AF73501E049A5B3F41BA7B8 /* [CP] Check Pods Manifest.lock */,
 				A93DBF691F0F950900EA8F36 /* Sources */,
 				A93DBF6A1F0F950900EA8F36 /* Frameworks */,
 				A93DBF6B1F0F950900EA8F36 /* Resources */,
+				CD32CC656A1E4940C581110E /* [CP] Embed Pods Frameworks */,
+				C5052E3DD4F3715378FEADDF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +291,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3735EC2F7E230D7E306846E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimonSays/Pods-SimonSays-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AF73501E049A5B3F41BA7B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F21754B848C231252437260 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimonSays/Pods-SimonSays-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB2F36F5F6DBA35CD694D0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5052E3DD4F3715378FEADDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimonSaysTests/Pods-SimonSaysTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD32CC656A1E4940C581110E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimonSaysTests/Pods-SimonSaysTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A93DBF551F0F950800EA8F36 /* Sources */ = {
@@ -411,6 +542,7 @@
 		};
 		A93DBF771F0F950900EA8F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC67FAAEC299487DD4E1ACD /* Pods-SimonSays.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimonSays/Info.plist;
@@ -423,6 +555,7 @@
 		};
 		A93DBF781F0F950900EA8F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DACA6A8629F200F2F486EFB /* Pods-SimonSays.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimonSays/Info.plist;
@@ -435,6 +568,7 @@
 		};
 		A93DBF7A1F0F950900EA8F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA87312718BD08B8AF92711B /* Pods-SimonSaysTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -449,6 +583,7 @@
 		};
 		A93DBF7B1F0F950900EA8F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77FED2B11B3353EE4E81DECD /* Pods-SimonSaysTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
