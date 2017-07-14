@@ -9,27 +9,28 @@
 import UIKit
 
 class HighScoreViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    //var highScoreArray: [StructOfHighScores]!
+    var highScores = AppDelegate.highScoreManager.getScores()
     // UITableViewDataSource data source means that this will be the one resposible for running the data to the table view
     
+    //by tomorrow, grab array off manager, return how big the array is and the number of rows and set the cells in detailed text label
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.highScores.count
         //we don't know how many rows we need
         //could return 0 or 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // we can use a struct for the section and row number 
         let cell = self.highScoreTable.dequeueReusableCell(withIdentifier: "HighScoreCell", for: indexPath)
-        //for gives enough information to give back correct cell
         
-        cell.textLabel?.text = "JUAN"
-        cell.detailTextLabel?.text = "42"
+        let highScoreAtIndex = self.highScores[indexPath.row]
+        cell.textLabel?.text = highScoreAtIndex.name
+        cell.detailTextLabel?.text = String(highScoreAtIndex.score)
         
         return cell
     }
-    
-//    func test(_ color: Int) {
-//        print("")
-//    }
    
     @IBAction func playAgainButton(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
@@ -44,8 +45,7 @@ class HighScoreViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+ 
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,14 +54,6 @@ class HighScoreViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }
